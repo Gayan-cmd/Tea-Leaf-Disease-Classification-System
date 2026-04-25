@@ -1,0 +1,77 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (large datasets — track selectively if needed)
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.zip
+*.tar.gz
+*.rar
+
+# Model artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pb
+saved_models/
+checkpoints/
+runs/
+
+# Logs
+*.log
+logs/
+tensorboard_logs/
+
+# Environment & secrets
+.env
+.env.*
+*.secret
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+*.bak
+*.tmp
+
+#dataset
+dataset/
