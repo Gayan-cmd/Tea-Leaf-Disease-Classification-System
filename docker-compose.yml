@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/workspace/models # Mount models so they don't have to be rebuilt into the image if changed
+    networks:
+      - tea-leaf-net
+
+  frontend:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      # Pass the backend URL as an environment variable to the frontend container.
+      # It uses the Docker service name 'backend' to route internally.
+      - BACKEND_URL=http://backend:8000/predict
+    networks:
+      - tea-leaf-net
+    depends_on:
+      - backend
+
+networks:
+  tea-leaf-net:
+    driver: bridge
