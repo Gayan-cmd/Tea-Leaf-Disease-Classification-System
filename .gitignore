@@ -77,3 +77,4 @@ desktop.ini
 #dataset
 dataset/
 models/
+*.png

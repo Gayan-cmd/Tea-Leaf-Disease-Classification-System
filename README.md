@@ -1,11 +1,3 @@
----
-title: Tea Leaf Disease Classifier
-emoji: 🍃
-colorFrom: green
-colorTo: blue
-sdk: docker
-pinned: false
----
 
 <div align="center">
 
@@ -151,7 +143,7 @@ The model classifies tea leaf images into **3 categories**:
 
 Visit the live application on **Hugging Face Spaces** — upload any tea leaf image and get an instant disease prediction.
 
-> 🤗 [**Launch Live Demo →**](https://github.com/Gayan-cmd/Tea-Leaf-Disease-Classification-System)
+> 🤗 [**Launch Live Demo →**](https://huggingface.co/spaces/Neo-cmd/Tea-Leaf-Disease-Classifier)
 
 ---
 
